@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(189, 231, 147);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1#principal {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.178);
+}
+
+h1 {
+color: brown;
+}
+
+h2{
+color: chocolate;
+}
+
+.girafa {
+    color: aqua;
+}
+
+.quetesao {
+    color: blue;
+}

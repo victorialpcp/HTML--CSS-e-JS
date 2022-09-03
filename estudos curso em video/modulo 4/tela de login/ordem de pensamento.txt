@@ -1,0 +1,107 @@
+Definir paleta de cores - poderia ser usado um root:
+
+Estrutura do HTML
+
+main - codigo principal (poderia nao ser usado nesse caso)
+section - area de login (dentro do main), que precisa de um id para ser editado no css
+
+dentro da section, definir as <div> de acordo com o conteudo da section. 
+nesse caso, foi feita uma div pra imagem e uma div para o formulario, pq estes estão na section.
+essas divs precisam de um id ou class para serem editadas no css.
+
+dentro da div do formulario, precisa colocar o conteudo dessa div, 
+nesse caso, foi colocado o título <h1>, e o parágrafo <p>
+
+adicionaremos um form dentro dessa div, do tipo post, para que as informações não sejam mostradas 
+na url do site. coloca .php na action do form
+
+
+Estrutura da CSS
+
+
+-nunca se esqueça do mobile first-
+
+
+
+* {}  - comece com o reset pra definir as regras gerais
+
+nele, coloque coisas como fonte, padding, margin, box-sizing, etc. 
+
+
+depois, pode editar o body,html {}  -  
+defina um background color
+defina o width e o height para 100% da tela
+
+
+depois as definições do main {} - 
+width e height 100%
+para posicionar o main, pode ser usado a tag  position: relative;
+
+
+depois, edite as sections utilizando os ids escolhidos, nesse caso, section#login {} -
+
+coloque um background color
+defina o width e o height
+width de 250px, por causa do mobile first
+height escolha o que preferir
+pode ser colocado um border radius para arredondar as bordas dessa section
+
+para colocar a section no meio da tela -
+
+position: absolute
+top: 50%
+left: 50%
+transform: translate (-50%, -50%)
+
+primeiro vc coloca a section no canto, e depois centraliza.
+
+pode ser colocada uma sombra por trás com box shadow, nesse caso, 0px 0px 10px black
+
+
+
+agora, edite a foto na section div#imagem {} -
+
+dentro dessa section#login, existe uma div com uma imagem. escreva isso usando os ids escolhidos para a section e a foto
+após isso, adicione um background com a cor do fundo do site, carregando a url da foto em questão
+para fazer a imagem aparecer é preciso que defina o height dela
+defina o tamanho dessa imagem com background size: cover ou contain, depois coloque no repeat
+
+a borda da imagem está sem arredontamento, para consertar isso, vc tem que ir na section#login (ou seja, a section em questão)
+e colocar um overflow: hidden. e ai tudo que estiver fora da borda nao vai aparecer
+
+posicione a imagem corretamente com background position
+
+
+
+agora, editando os textos/formularios dessa section, na div identificada com o id escolhido
+
+section#login > div#formulario {} - 
+
+coloque um padding pra tirar o texto colado da borda da section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

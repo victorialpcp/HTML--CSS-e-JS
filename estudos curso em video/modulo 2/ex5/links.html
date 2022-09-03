@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 20px;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:visited {
+    color: gray;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+a:active {
+    color: cadetblue;
+}
+
+.especial::after {
+    content:'←' ;
+}
+
+.especial::before {
+    content: '→' ;
+}
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <h1>links maneiros</h1>
+
+    <ul>
+        <li> <a href="https://www.facebook.com/victoria.lopes.779/" target="_blank" > Facebook </a> </li>
+        <li> <a href="https://www.instagram.com/the1999tattooo/" target="_blank" class="especial"> Instagram </a> </li>
+        <li> <a href="https://twitter.com/ehfodalekeh" target="_blank"> Twitter </a> </li>
+    </ul>
+</body>
+</html>

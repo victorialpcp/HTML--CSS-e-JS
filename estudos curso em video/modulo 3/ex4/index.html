@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            text-align: center;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: rgba(95, 158, 160, 0.459);
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+        
+        thead, tfoot {
+            background-color: cadetblue;
+            color: brown;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color:cadetblue ;
+
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: rgba(95, 158, 160, 0.541);
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+       
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    
+    <table>
+        <caption>População das Unidades Federativas </caption>
+        <thead>
+          <tr>
+            <th scope="col">Estado</th>
+            <th scope="col" style="width: 120px">População</th>
+          </tr>
+        </thead>
+
+        
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 857 642</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 569 452</td>
+            </tr>
+        </tbody>
+
+        
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>213 875 965</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolor illo dolorum mollitia dolores dicta quia tenetur blanditiis impedit, nobis sequi, cumque eaque ullam? Voluptatibus minus voluptatum cupiditate qui dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolor illo dolorum mollitia dolores dicta quia tenetur blanditiis impedit, nobis sequi, cumque eaque ullam? Voluptatibus minus voluptatum cupiditate qui dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolor illo dolorum mollitia dolores dicta quia tenetur blanditiis impedit, nobis sequi, cumque eaque ullam? Voluptatibus minus voluptatum cupiditate qui dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolor illo dolorum mollitia dolores dicta quia tenetur blanditiis impedit, nobis sequi, cumque eaque ullam? Voluptatibus minus voluptatum cupiditate qui dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolor illo dolorum mollitia dolores dicta quia tenetur blanditiis impedit, nobis sequi, cumque eaque ullam? Voluptatibus minus voluptatum cupiditate qui dolorum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, dolor illo dolorum mollitia dolores dicta quia tenetur blanditiis impedit, nobis sequi, cumque eaque ullam? Voluptatibus minus voluptatum cupiditate qui dolorum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit quae magni itaque tempore quia, ratione eveniet voluptatum voluptatibus saepe repudiandae nulla. Numquam asperiores soluta voluptatibus, perspiciatis ut omnis perferendis dicta. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam tenetur ratione officiis, exercitationem expedita sint neque? Illum commodi ex ab laudantium, accusamus rem natus vero omnis veniam quidem ut eos!
+    </p>
+</body>
+</html>
